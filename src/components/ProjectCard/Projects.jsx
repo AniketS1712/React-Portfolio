@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import collegeportal from "../../Assets/Images/projectimages/collegeportal.png";
 import samanvaya from "../../Assets/Images/projectimages/samanvaya.jpg";
+import portfolio from "../../Assets/Images/projectimages/Portfolio.png";
 
 function Projects() {
   const projects = [
+    {
+      image: portfolio,
+      name: "React Portfolio Website",
+      techStack: ["React JS", "Tailwind CSS", "JSX"],
+      repoLink: "https://github.com/AniketS1712/Samanvaya/tree/master",
+      liveLink: "https://example.com/",
+    },
     {
       image: samanvaya,
       name: "Samanvaya - A real time whiteboard",
