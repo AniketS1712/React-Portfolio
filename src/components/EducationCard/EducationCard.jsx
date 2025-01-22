@@ -34,7 +34,7 @@ export function EducationCard() {
         {CollegeEducation.map((edu, index) => (
           <div
             key={index}
-            className="bg-white w-80 h-52 flex flex-col justify-between shadow-md rounded-lg p-3"
+            className="bg-white w-80 h-52 flex flex-col justify-between shadow-md rounded-lg p-3 max-sm:h-60 max-sm:w-60"
           >
             <div>
               <h2 className="text-xl font-semibold mb-2">{edu.name}</h2>

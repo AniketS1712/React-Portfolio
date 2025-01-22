@@ -12,7 +12,7 @@ import cursorai from "../../Assets/Images/softwareimages/cursorai.png";
 
 function ProfileCard() {
   return (
-    <div className="bg-[#e3ffd0] border-2 border-white flex flex-col flex-wrap rounded-2xl p-8 w-80 sm:w-80 md:w-100 [box-shadow:4px_4px_8px_#959595]">
+    <div className="bg-[#e3ffd0] border-2 border-white flex flex-col flex-wrap rounded-2xl p-8 w-full sm:w-80 md:w-80 lg:w-100 [box-shadow:4px_4px_8px_#959595]">
       <div className="flex items-center justify-center sm:justify-between mb-6 flex-col sm:flex-row">
         <img
           src={profileimage}

@@ -22,7 +22,7 @@ export const AboutCard = () => {
   ];
 
   return (
-    <div className="bg-[#e3ffd0] border-2 h-auto border-white rounded-2xl p-8 w-96 [box-shadow:4px_4px_8px_#959595] mt-6 ml-6 ">
+    <div className="bg-[#e3ffd0] border-2 h-auto border-white rounded-2xl p-8 w-96 [box-shadow:4px_4px_8px_#959595] mt-6 ml-6 max-sm:ml-0 max-sm:w-80">
       <h3 className="text-lg text-gray-500 font-medium mb-2">
         Some Glimpses On...
       </h3>

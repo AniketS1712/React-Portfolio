@@ -2,7 +2,7 @@ import React from "react";
 
 function SkillsCard({ skills }) {
   return (
-    <div className="bg-[#e3ffd0] border-2 border-white rounded-3xl p-6 h-30 [box-shadow:4px_4px_8px_#959595] ml-6 mt-4 relative overflow-hidden">
+    <div className="bg-[#e3ffd0] border-2 border-white rounded-3xl p-6 h-30 [box-shadow:4px_4px_8px_#959595] ml-6 mt-4 relative overflow-hidden max-sm:ml-0">
       <h3 className="text-lg text-start font-bold text-black">Skills</h3>
       <ul className="flex flex-wrap gap-8">
         {skills.map((skill, index) => (
