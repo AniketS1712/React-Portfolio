@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import resume from "../../Assets/Images/resume.png";
+import resumefile from "../../Assets/static/Aniket Resume.pdf";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +43,7 @@ const ContactForm = () => {
       <div className="resume flex flex-col justify-center items-center py-6 px-4 w-full md:w-1/3">
         <img src={resume} alt="Resume" className="h-44" />
         <button
-          onClick={() => window.open("resume-link.pdf", "_blank")}
+          onClick={() => window.open({ resumefile }, "_blank")}
           className="bg-gradient-to-r from-black to-gray-900 text-white py-2 px-6 rounded-lg shadow-md hover:from-gray-900 hover:to-gray-600 transition-all duration-200"
         >
           View Resume
