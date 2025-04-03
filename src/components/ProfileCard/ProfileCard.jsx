@@ -1,19 +1,20 @@
 import React from "react";
 import profileimage from "../../Assets/Images/profieImage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import figma from "../../Assets/Images/softwareimages/figma.png";
+import vscode from "../../Assets/Images/softwareimages/vscode.png";
+import cursorai from "../../Assets/Images/softwareimages/cursorai.png";
+import android from "../../Assets/Images/skillsimages/androidstudio.png";
 import {
   faGithub,
   faLinkedin,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import figma from "../../Assets/Images/softwareimages/figma.png";
-import vscode from "../../Assets/Images/softwareimages/vscode.png";
-import cursorai from "../../Assets/Images/softwareimages/cursorai.png";
 
 function ProfileCard() {
   return (
     <div className="bg-[#e3ffd0] border-2 border-white flex flex-col flex-wrap rounded-2xl p-8 w-full sm:w-80 md:w-80 lg:w-100 [box-shadow:4px_4px_8px_#959595]">
-      <div className="flex items-center justify-center sm:justify-between mb-6 flex-col sm:flex-row">
+      <div className="flex items-center justify-center sm:justify-around mb-6 flex-col sm:flex-row">
         <img
           src={profileimage}
           alt="ProfileImage"
@@ -22,7 +23,7 @@ function ProfileCard() {
         <div className="text-center sm:text-left">
           <h1 className="text-xl font-semibold">AniketSinghal</h1>
           <h3 className="text-gray-700 text-sm">
-            Web & Application <br /> Developer
+            Web & Android <br /> Developer
           </h3>
         </div>
       </div>
@@ -98,8 +99,11 @@ function ProfileCard() {
           <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
             <img src={vscode} alt="VScode" />
           </div>
-          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#9c9ea1] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
+          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
             <img src={cursorai} alt="Cursor AI" />
+          </div>
+          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
+            <img src={android} alt="Android Studio" />
           </div>
         </div>
       </div>

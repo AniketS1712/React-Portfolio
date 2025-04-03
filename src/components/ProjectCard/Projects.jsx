@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import collegeportal from "../../Assets/Images/projectimages/collegeportal.png";
 import samanvaya from "../../Assets/Images/projectimages/samanvaya.jpg";
 import portfolio from "../../Assets/Images/projectimages/Portfolio.png";
+import businessgame from "../../Assets/Images/projectimages/businessgame.PNG";
 
 function Projects() {
   const projects = [
@@ -19,6 +20,14 @@ function Projects() {
       techStack: ["React JS", "Express", "NodeJS", "MongoDB"],
       repoLink: "https://github.com/AniketS1712/Samanvaya/tree/master",
       liveLink: "https://example.com/",
+    },
+    {
+      image: businessgame,
+      name: "Business Game",
+      techStack: ["Flutter", "Firebase"],
+      repoLink: "https://github.com/AniketS1712/BusinessGame",
+      liveLink:
+        "https://1drv.ms/u/c/4e46ae5a28a8b6c9/EeC9mQk6j4tEmMhoL_Jm_jgBt3Q74ZgJ2kVT0_J7ASh3xA?e=koRlzA",
     },
     {
       image: collegeportal,

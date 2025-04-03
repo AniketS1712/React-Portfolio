@@ -15,17 +15,17 @@ import { AboutCard } from "./components/AboutCard/AboutCard";
 
 function App() {
   const skills = [
-    { logo: js, name: "JavaScript" },
+    { logo: flutter, name: "Flutter" },
     { logo: react, name: "React" },
+    { logo: js, name: "JavaScript" },
     { logo: node, name: "Node.js" },
-    { logo: mongo, name: "CSS" },
+    { logo: mongo, name: "Mongo" },
     { logo: python, name: "Python" },
     { logo: django, name: "Django" },
-    { logo: flutter, name: "Flutter" },
     { logo: java, name: "Java" },
   ];
   return (
-    <div className="App bg-yellow-50 flex flex-wrap p-6">
+    <div className="App bg-black flex flex-wrap p-6">
       <div className="flex flex-col w-full md:w-1/3 lg:w-1/4">
         <ProfileCard />
       </div>

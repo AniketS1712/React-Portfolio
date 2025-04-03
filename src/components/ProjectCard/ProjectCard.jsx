@@ -9,7 +9,7 @@ function ProjectCard({ image, name, techStack, repoLink, liveLink }) {
           <img
             src={image}
             alt={`${name} Preview`}
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-full object-contain rounded-lg"
           />
         </div>
 
