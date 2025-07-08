@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Baskerville";
+  src: url("./Assets/fonts/fonts/Baskervville-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Baskerville", serif;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -1rem;
+  width: auto;
+}
+
+.masonry-column {
+  padding-left: 1rem;
+  background-clip: padding-box;
+}
+
+.masonry-column > div {
+  margin-bottom: 1rem;
+}

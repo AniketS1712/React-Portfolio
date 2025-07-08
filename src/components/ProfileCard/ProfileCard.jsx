@@ -1,110 +1,79 @@
-import React from "react";
-import profileimage from "../../Assets/Images/profieImage.jpg";
+import profileImage from "../../Assets/Images/profileImage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import figma from "../../Assets/Images/softwareimages/figma.png";
-import vscode from "../../Assets/Images/softwareimages/vscode.png";
-import cursorai from "../../Assets/Images/softwareimages/cursorai.png";
-import android from "../../Assets/Images/skillsimages/androidstudio.png";
-import {
-  faGithub,
-  faLinkedin,
-  faXTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+import { border, colors, gradients, shadows } from "../../constants/theme";
+import { skills } from "../../constants/skills";
+import { tools } from "../../constants/tools";
+import { socialLinks } from "../../constants/sociallinks";
 
 function ProfileCard() {
   return (
-    <div className="bg-[#e3ffd0] border-2 border-white flex flex-col flex-wrap rounded-2xl p-8 w-full sm:w-80 md:w-80 lg:w-100 [box-shadow:4px_4px_8px_#959595]">
-      <div className="flex items-center justify-center sm:justify-around mb-6 flex-col sm:flex-row">
+    <div
+      className={`bg-[${colors.cardBackground}] ${border.standard} text-${colors.textPrimary} rounded-xl p-6 ${shadows.standard} break-inside-avoid`}
+    >
+      {/* Profile Info */}
+      <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
         <img
-          src={profileimage}
-          alt="ProfileImage"
-          className="rounded-full w-16 h-16 mb-4 sm:mb-0"
+          src={profileImage}
+          alt="Aniket Singhal"
+          className="w-32 h-32 rounded-full border-2 border-white mb-4 sm:mb-0 shadow-md shadow-black"
         />
-        <div className="text-center sm:text-left">
-          <h1 className="text-xl font-semibold">AniketSinghal</h1>
-          <h3 className="text-gray-700 text-sm">
-            Web & Android <br /> Developer
-          </h3>
+        <div className="text-center sm:text-left self-center">
+          <h1 className="text-2xl font-bold">Aniket Singhal</h1>
+          <p className="text-sm text-gray-700 font-medium">
+            Web & Android Developer
+          </p>
         </div>
       </div>
 
-      {/* Social Links as cards */}
-      <div className="sociallinks flex justify-around mt-8 flex-wrap gap-4">
-        <div className="social-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-          <a href="https://github.com/AniketS1712">
-            <FontAwesomeIcon
-              icon={faGithub}
-              size="2xl"
-              style={{ color: "#000" }}
-            />
+      {/* Social Icons */}
+      <div className="mt-6 flex justify-center sm:justify-start gap-4">
+        {socialLinks.map(({ href, icon, label }) => (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className={`${gradients.tealDark} px-4 py-3 rounded-lg ${shadows.hoverable}`}
+          >
+            <FontAwesomeIcon icon={icon} size="xl" color="white" />
           </a>
-        </div>
-        <div className="social-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-          <a href="https://x.com/SAniket1712">
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              size="2xl"
-              style={{ color: "#000" }}
-            />
-          </a>
-        </div>
-        <div className="social-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-          <a href="www.linkedin.com/in/aniket-singhal-554b7a2b2">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size="2xl"
-              style={{ color: "#000" }}
-            />
-          </a>
+        ))}
+      </div>
+
+      {/* Skills */}
+      <div className="mt-6">
+        <h4 className="font-bold mb-2 tracking-wide">Skills</h4>
+        <div className="flex flex-wrap gap-2">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className={`${gradients.tealDark} text-${colors.textSecondary} text-sm px-2 py-1 rounded shadow-md shadow-black`}
+            >
+              {skill}
+            </span>
+          ))}
         </div>
       </div>
 
-      {/* Skills List */}
-      <div className="skillslist mt-8">
-        <h4 className="text-gray-800 text-lg font-bold pb-5">SKILLS</h4>
-        <ul className="flex flex-wrap gap-2 justify-center sm:justify-start">
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            Git
-          </li>
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            Github
-          </li>
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            ReactJS
-          </li>
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            Express
-          </li>
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            Flutter
-          </li>
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            Java
-          </li>
-          <li className="bg-gray-100 text-black text-sm px-2 py-1 rounded-lg shadow-black shadow-sm">
-            C++
-          </li>
-        </ul>
-      </div>
-
-      {/* Software Knowledge */}
-      <div className="softwareknowledge mt-8">
-        <h4 className="text-gray-800 text-lg font-bold py-5">
-          SOFTWARE KNOWLEDGE
+      {/* Tools */}
+      <div className="mt-7">
+        <h4 className="font-bold mb-3 text-l tracking-normal">
+          Software Knowledge
         </h4>
-        <div className="flex gap-3 justify-center sm:justify-start flex-wrap">
-          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-            <img src={figma} alt="figma" />
-          </div>
-          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-            <img src={vscode} alt="VScode" />
-          </div>
-          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-            <img src={cursorai} alt="Cursor AI" />
-          </div>
-          <div className="software-card p-2 w-12 h-12 bg-gray-100 rounded-xl [box-shadow:2px_2px_2px_#9c9ea1,_-5px_-5px_10px_#ffffff] hover:scale-105 hover:[box-shadow:2px_2px_4px_#9c9ea1] transition-all duration-300 ease-in-out">
-            <img src={android} alt="Android Studio" />
-          </div>
+        <div className="flex flex-wrap gap-5">
+          {tools.map((icon, index) => (
+            <div
+              key={index}
+              className={`w-12 h-12 ${gradients.tealDark} p-2 rounded-xl shadow hover:scale-110 transition-transform`}
+            >
+              <img
+                src={icon}
+                alt="Software tool"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>

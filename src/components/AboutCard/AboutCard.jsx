@@ -1,49 +1,51 @@
-import React from "react";
+import achievements from "../../constants/achievementsData";
+import { border, colors, shadows } from "../../constants/theme";
+import "./AboutCard.css";
 
 export const AboutCard = () => {
-  const achievements = [
-    {
-      title: "CODSOFT Front-End Internship",
-      description: "Completed my first internship.",
-      date: "June 2024",
-    },
-    {
-      title: "IBM Front-End Intenship",
-      description:
-        "Completed my 3 months long IBM intenship to develop a website with good interface",
-      date: "August 2024",
-    },
-    {
-      title: "Participant in Exposure 2024",
-      description:
-        "Participated in a college fest named Exposure to build a website using a web framework and develop a website that can solve real world problems.",
-      date: "September 2024",
-    },
-  ];
-
   return (
-    <div className="bg-[#e3ffd0] border-2 h-auto border-white rounded-2xl p-8 w-96 [box-shadow:4px_4px_8px_#959595] mt-6 ml-6 max-sm:ml-0 max-sm:w-80">
-      <h3 className="text-lg text-gray-500 font-medium mb-2">
-        Some Glimpses On...
-      </h3>
-      <h1 className="text-3xl font-bold mb-6 text-gray-800">Achievements</h1>
-      <div className="relative h-96 overflow-hidden">
+    <div
+      className={`about-card rounded-2xl p-6 max-w-sm w-full mx-auto 
+      ${border.standard} ${shadows.standard}`}
+      style={{
+        backgroundColor: colors.cardBackground,
+        color: colors.textPrimary,
+      }}
+    >
+      <div className="flex items-center gap-4 mb-48">
+        <div>
+          <h2 className="text-xl font-bold text-black">About Me</h2>
+          <p className="text-base text-gray-800 mt-5 font-semibold tracking-wider">
+            I'm a passionate app developer with strong roots in Flutter and MERN
+            stack. While I enjoy full-stack web development, my current focus is
+            on building intuitive, performant mobile apps that create real
+            impact.
+          </p>
+        </div>
+      </div>
+
+      {/* Section Heading */}
+      <div className="mb-4">
+        <h3 className="text-md text-black font-medium">Some Glimpses On...</h3>
+        <h1 className="text-2xl font-bold text-gray-800">My Achievements</h1>
+      </div>
+
+      {/* Achievements Marquee */}
+      <div className="relative overflow-hidden min-h-[32rem] max-h-[36rem]">
         <div
           className="achievement-list absolute top-0 left-0 flex flex-col gap-6 animate-marquee"
-          style={{ animationDuration: `${achievements.length * 5}s` }}
+          style={{ animationDuration: `${achievements.length * 4}s` }}
         >
-          {achievements.concat(achievements).map((achievement, index) => (
+          {achievements.concat(achievements).map((item, index) => (
             <div
               key={index}
-              className="achievement-item bg-white rounded-xl p-3 shadow-md border-l-4 border-blue-500"
+              className="bg-white rounded-xl p-3 shadow-sm border-l-4 border-blue-500"
             >
               <h2 className="text-md font-semibold text-gray-800 mb-1">
-                {achievement.title}
+                {item.title}
               </h2>
-              <p className="text-gray-600 text-sm mb-2">
-                {achievement.description}
-              </p>
-              <p className="text-gray-400 text-xs">{achievement.date}</p>
+              <p className="text-gray-600 text-sm mb-2">{item.description}</p>
+              <p className="text-gray-400 text-xs">{item.date}</p>
             </div>
           ))}
         </div>

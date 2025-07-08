@@ -1,0 +1,15 @@
+export const skills = [
+  "Flutter",
+  "Firebase",
+  "ReactJS",
+  "Node JS",
+  "Express",
+  "Mongo DB",
+  "MERN",
+  "HTML",
+  "CSS",
+  "Java Script",
+  "Git",
+  "GitHub",
+  "Cloudinary",
+];
