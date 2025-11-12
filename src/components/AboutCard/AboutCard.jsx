@@ -1,5 +1,4 @@
 import achievements from "../../constants/achievementsData";
-import { border, colors, shadows } from "../../constants/theme";
 import "./AboutCard.css";
 
 export const AboutCard = () => {

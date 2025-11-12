@@ -1,10 +1,5 @@
 const achievements = [
   {
-    title: "CODSOFT Front-End Internship",
-    description: "Completed my first internship.",
-    date: "June 2024",
-  },
-  {
     title: "IBM Front-End Internship",
     description:
       "Completed my 3-month long IBM internship to develop a website with a good interface.",

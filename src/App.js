@@ -1,12 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Masonry from "react-masonry-css";
 
-import ProfileCard from "./components/ProfileCard/ProfileCard";
-import Projects from "./components/ProjectCard/Projects";
-import SkillsCard from "./components/SkillsCard/SkillsCard";
-import ContactCard from "./components/ContactCard/ContactCard";
-import { EducationCard } from "./components/EducationCard/EducationCard";
-import { AboutCard } from "./components/AboutCard/AboutCard";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+// import Projects from "./components/ProjectCard/Projects";
+// import SkillsCard from "./components/SkillsCard/SkillsCard";
+// import ContactCard from "./components/ContactCard/ContactCard";
+// import { EducationCard } from "./components/EducationCard/EducationCard";
+// import { AboutCard } from "./components/AboutCard/AboutCard";
 
 import react from "./Assets/Images/skillsimages/react.png";
 import django from "./Assets/Images/skillsimages/django.png";
@@ -19,7 +20,6 @@ import python from "./Assets/Images/skillsimages/python.png";
 
 import "./App.css";
 import AllProjects from "./components/allproducts/AllProjects";
-import EmptySlot from "./components/EmptySlot";
 
 function App() {
   const skills = [
@@ -41,24 +41,31 @@ function App() {
 
   return (
     <Router>
+      <Header />
       <Routes>
         <Route
           path="/"
           element={
-            <div className="App bg-green-50 min-h-screen p-6 overflow-hidden">
-              <Masonry
-                breakpointCols={breakpointColumnsObj}
-                className="masonry-grid"
-                columnClassName="masonry-column"
-              >
-                <ProfileCard />
-                <AboutCard />
-                <EducationCard />
-                <Projects />
-                <EmptySlot />
-                <SkillsCard skills={skills} />
-              </Masonry>
-              <ContactCard />
+            <div className="App bg-gradient-to-br from-green-50 via-blue-50 to-teal-50 min-h-screen">
+              {/* Hero Section */}
+              <Hero />
+              
+              {/* Rest of Content */}
+              {/* <div className="p-6">
+                <Masonry
+                  breakpointCols={breakpointColumnsObj}
+                  className="masonry-grid"
+                  columnClassName="masonry-column"
+                >
+                  <AboutCard />
+                  <EducationCard />
+                  <Projects />
+                  <SkillsCard skills={skills} />
+                </Masonry>
+                <div id="contact">
+                  <ContactCard />
+                </div>
+              </div> */}
             </div>
           }
         />
