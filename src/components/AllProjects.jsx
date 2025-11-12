@@ -1,5 +1,5 @@
-import ProjectCard from "../ProjectCard/ProjectCard";
-import { projects } from "../../constants/projects";
+import ProjectCard from "./ProjectCard/ProjectCard";
+import { projects } from "../constants/projects";
 import { useNavigate } from "react-router-dom";
 
 function AllProjects() {

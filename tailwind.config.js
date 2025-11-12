@@ -1,52 +1,45 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: "class",
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-        // Brand colors
-        primary: "#3b82f6", // bright blue
-        secondary: "#8b5cf6", // purple
-        accent: "#06b6d4", // cyan
-
-        // Text
+        primary: "#047e57",
+        secondary: "#f59e0b",
+        accent: "#530000",
         text: {
-          primary: "#1f2937", // dark slate
-          secondary: "#4b5563", // medium gray
-          inverse: "#ffffff", // white for dark elements
+          primary: "#000919",
+          secondary: "#4b5563",
+          inverse: "#f9fafb",
         },
-
-        // Backgrounds
         background: {
-          light: "#f9fafb", // off-white base
-          surface: "#ffffff", // card surfaces
-          dark: "#111827", // optional dark section/background
+          light: "#fcffe7",
+          surface: "#e5ffdf",
+          dark: "#000919",
         },
 
         // Borders
         border: {
-          light: "#e5e7eb", // soft gray
-          accent: "#3b82f6", // blue accent
+          light: "#e5e7eb",
+          accent: "#047e57",
         },
 
         // States
         state: {
-          hover: "#2563eb", // darker blue
-          active: "#1d4ed8", // darker accent for active
-          focus: "#06b6d4", // cyan focus
+          hover: "#02704f",
+          active: "#047857",
+          focus: "#f59e0b",
         },
       },
-
       backgroundImage: {
-        "gradient-primary": "linear-gradient(to right, #3b82f6, #6366f1)",
-        "gradient-secondary": "linear-gradient(to right, #8b5cf6, #6366f1)",
-        "gradient-accent": "linear-gradient(to right, #06b6d4, #3b82f6)",
-        "gradient-vibrant-text":
-          "linear-gradient(to right, #6366f1, #8b5cf6, #06b6d4)",
+        "gradient-primary": "linear-gradient(to right, #047e57, #003323)",
+        "gradient-secondary": "linear-gradient(to right, #f59e0b, #d97706)",
+        "gradient-accent": "linear-gradient(to right, #34d89d, #d4ff7e)",
+        "gradient-vibrant-text": "linear-gradient(to right, #047e57, #f59e0b)",
         "gradient-vibrant-text-dark":
-          "linear-gradient(to right, #1e3a8a, #5b21b6, #0d9488)",
+          "linear-gradient(to right, #065f46, #b45309)",
       },
-
     },
   },
   plugins: [],

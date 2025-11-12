@@ -16,8 +16,8 @@ export const socialLinks = [
     label: "GitHub",
   },
   {
-    href: "ssinghalaniket@gmail.com",
+    href: "mailto:ssinghalaniket@gmail.com",
     icon: faEnvelope,
-    label: "Twitter",
+    label: "Email",
   },
 ];
