@@ -2,7 +2,7 @@ import profileImage from "../Assets/Images/profileImage.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinks } from "../constants/sociallinks";
 import Aresume from "../Assets/static/Aniket_Resume.pdf";
-import { ArrowRight, Download } from "lucide-react";
+import { Download } from "lucide-react";
 
 function Hero() {
   return (
