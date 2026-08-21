@@ -1,5 +1,4 @@
 import profileImage from "../Assets/Images/profileImage.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { socialLinks } from "../constants/sociallinks";
 import Aresume from "../Assets/static/Aniket_Resume.pdf";
 import { Download } from "lucide-react";
@@ -23,14 +22,14 @@ function Hero() {
             </h1>
 
             <p className="text-xl md:text-2xl font-semibold text-text-secondary mb-6">
-              Full Stack Developer | Mobile Application Specialist
+              Flutter Developer | Mobile Application Specialist
             </p>
 
             <p className="text-lg text-text-secondary leading-relaxed mb-10">
-              I transform complex ideas into intuitive, high-performance digital
-              products. My focus is delivering seamless, scalable, and
-              beautifully engineered **mobile and web applications** that drive
-              real-world value.
+              I transform complex ideas into intuitive, high-performance mobile
+              applications with Flutter. While my primary focus is crafting
+              scalable mobile experiences, my full-stack web background enables
+              me to build seamless, end-to-end digital solutions.
             </p>
 
             {/* --- CTA + Social Links in the same line --- */}
@@ -53,9 +52,9 @@ function Hero() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="py-3 px-4 rounded-full bg-gradient-secondary border border-border-light hover:bg-background-light hover:scale-110 transition-transform duration-300 text-text-inverse hover:text-text-primary shadow-sm"
+                  className="p-3 rounded-full bg-gradient-secondary border border-border-light hover:bg-background-light hover:scale-110 transition-transform duration-300 text-text-inverse hover:text-text-primary shadow-sm flex items-center justify-center"
                 >
-                  <FontAwesomeIcon icon={icon} size="lg" />
+                  <span className="w-5 h-5 flex items-center justify-center">{icon}</span>
                 </a>
               ))}
             </div>

@@ -1,6 +1,6 @@
 import { Github, Eye } from "lucide-react"; // Using lucide-react for clean icons
 
-function ProjectCard({ image, name, techStack = [], repoLink, liveLink }) {
+function ProjectCard({ image, name, description, techStack = [], repoLink, liveLink }) {
   // A simple mechanism to cycle through theme colors for the tech stack badges
   const tagColorClasses = [
     "bg-primary/10 text-primary border-primary/30",
@@ -26,6 +26,13 @@ function ProjectCard({ image, name, techStack = [], repoLink, liveLink }) {
 
       {/* Name */}
       <h3 className="text-2xl font-bold text-text-primary mt-4 mb-2">{name}</h3>
+
+      {/* Description */}
+      {description && (
+        <p className="text-sm text-text-secondary mb-4 line-clamp-3 leading-relaxed">
+          {description}
+        </p>
+      )}
 
       {/* Tech Stack (Pushed to the bottom) */}
       <div className="mt-auto pt-4">

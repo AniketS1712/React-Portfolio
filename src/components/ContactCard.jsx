@@ -129,8 +129,8 @@ const ContactCard = () => {
               </div>
               <div>
                 <p className="text-sm font-bold text-text-secondary">Email</p>
-                <a href="mailto:aniketsinghal488@gmail.com" className="text-base font-semibold text-primary hover:text-state-hover break-all">
-                  aniketsinghal488@gmail.com
+                <a href="mailto:ssinghalaniket@gmail.com" className="text-base font-semibold text-primary hover:text-state-hover break-all">
+                  ssinghalaniket@gmail.com
                 </a>
               </div>
             </div>

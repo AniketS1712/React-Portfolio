@@ -23,10 +23,10 @@ export const AboutCard = () => {
               Who I Am
             </div>
             <p className="text-lg text-text-secondary leading-relaxed">
-              I'm a passionate application developer with strong roots in **Flutter** for cross-platform mobile development and the **MERN stack** (MongoDB, Express, React, Node.js) for robust web solutions.
+              I'm a passionate application developer with strong roots in <strong className="font-bold text-text-primary">Flutter</strong> for cross-platform mobile development and the <strong className="font-bold text-text-primary">MERN stack</strong> (MongoDB, Express, React, Node.js) for robust web solutions.
             </p>
             <p className="text-lg text-text-secondary leading-relaxed">
-              I thrive on solving complex problems and turning innovative ideas into deployed products, focusing on building **intuitive, performant mobile apps** that create real impact and deliver seamless user experiences.
+              I thrive on solving complex problems and turning innovative ideas into deployed products, focusing on building <strong className="font-bold text-text-primary">intuitive, performant mobile apps</strong> that create real impact and deliver seamless user experiences.
             </p>
           </div>
 
@@ -39,15 +39,15 @@ export const AboutCard = () => {
             <ul className="space-y-3 text-text-primary">
               <li className="flex items-start">
                 <span className="text-accent text-2xl mr-2 leading-none">•</span>
-                <span className="text-md font-medium">Mastering state management (e.g., Riverpod/Redux) for large-scale applications.</span>
+                <span className="text-md font-medium">Shipping and iterating on Flutter apps for the Google Play Store (Void Quest is live).</span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent text-2xl mr-2 leading-none">•</span>
-                <span className="text-md font-medium">Exploring serverless architectures for backend efficiency and scalability.</span>
+                <span className="text-md font-medium">Building a corporate-developer-focused portfolio: CI/CD companions, PR review tools, and Jira/GitHub dashboard apps in Flutter.</span>
               </li>
               <li className="flex items-start">
                 <span className="text-accent text-2xl mr-2 leading-none">•</span>
-                <span className="text-md font-medium">Contributing to open-source developer tools.</span>
+                <span className="text-md font-medium">Exploring India-market utility apps — a Vehicle Document & Challan Tracker and a UPI Spend Analyzer.</span>
               </li>
             </ul>
           </div>

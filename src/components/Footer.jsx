@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 // Assuming these constants are accessible from the same locations as in Header/ContactCard
 import { socialLinks } from "../constants/sociallinks"; 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Code, Heart } from "lucide-react"; // Using lucide-react for icons
 
 // Defining quick links for the footer
@@ -79,9 +78,9 @@ function Footer() {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     aria-label={label}
-                                    className="p-3 rounded-full bg-background-light border border-border-light hover:scale-110 transition-transform duration-300 text-text-primary hover:text-primary shadow-sm"
+                                    className="p-3 rounded-full bg-background-light border border-border-light hover:scale-110 transition-transform duration-300 text-text-primary hover:text-primary shadow-sm flex items-center justify-center"
                                 >
-                                    <FontAwesomeIcon icon={icon} size="lg" />
+                                    <span className="w-5 h-5 flex items-center justify-center">{icon}</span>
                                 </a>
                             ))}
                         </div>
