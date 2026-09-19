@@ -9,6 +9,7 @@ import { AboutCard } from "./components/AboutCard";
 import Footer from "./components/Footer";
 import AllProjects from "./components/AllProjects";
 import StockRegiPrivacy from "./components/StockRegiPrivacy";
+import StockRegiDeleteAccount from "./components/StockRegiDeleteAccount";
 import "./App.css";
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         />
         <Route path="/projects" element={<AllProjects />} />
         <Route path="/stockregi-privacy" element={<StockRegiPrivacy />} />
+        <Route path="/stockregi-delete-account" element={<StockRegiDeleteAccount />} />
       </Routes>
     </Router>
   );
