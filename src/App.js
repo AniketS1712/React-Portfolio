@@ -8,6 +8,7 @@ import { EducationCard } from "./components/EducationCard";
 import { AboutCard } from "./components/AboutCard";
 import Footer from "./components/Footer";
 import AllProjects from "./components/AllProjects";
+import StockRegiPrivacy from "./components/StockRegiPrivacy";
 import "./App.css";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
           }
         />
         <Route path="/projects" element={<AllProjects />} />
+        <Route path="/stockregi-privacy" element={<StockRegiPrivacy />} />
       </Routes>
     </Router>
   );
